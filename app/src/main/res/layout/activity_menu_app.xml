@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+
+    <TextView
+        android:id="@+id/txtSaludo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Bienvenido/a, "
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:alpha="0.6"
+                app:srcCompat="@drawable/forma2" />
+
+            <ImageView
+                android:id="@+id/imgNominas"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="45dp"
+                android:onClick="salario"
+                android:src="@drawable/nomina">
+
+            </ImageView>
+
+            <ImageView
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="40dp"
+                android:alpha="0.6"
+                app:srcCompat="@drawable/forma2" />
+
+            <ImageView
+                android:id="@+id/imgCalendario"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="45dp"
+                android:onClick="permiso"
+                android:src="@drawable/calendario">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Nóminas"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="Solicitar Días"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:alpha="0.6"
+                app:srcCompat="@drawable/forma2" />
+
+            <ImageView
+                android:id="@+id/imgDocumentos"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="45dp"
+                android:onClick="document"
+                android:src="@drawable/carpetas">
+
+            </ImageView>
+
+            <ImageView
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="40dp"
+                android:alpha="0.6"
+                app:srcCompat="@drawable/forma2" />
+
+            <ImageView
+                android:id="@+id/imgExit"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="55dp"
+                android:onClick="salir"
+                android:src="@drawable/cerrarsesion">
+
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Documentos"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="Exit"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+</LinearLayout>
