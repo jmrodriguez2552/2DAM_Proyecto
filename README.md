@@ -3,7 +3,7 @@
 * ExpressApp es una solución integral nativa para Android diseñada para la gestión de recursos humanos y comunicación interna entre la empresa y sus empleados.
 * La aplicación permite centralizar el acceso a documentos laborales, gestión de permisos y autenticación segura en una sola plataforma.
 
-###📝 Descripción
+### 📝 Descripción
 
 La aplicación funciona como un Portal del Empleado móvil. Tras un inicio de sesión validado contra un servidor remoto, el usuario accede a un panel principal 
 desde el cual puede consultar sus nóminas, solicitar permisos oficiales mediante flujos de trabajo automatizados y gestionar otros documentos laborales.
@@ -55,7 +55,7 @@ desde el cual puede consultar sus nóminas, solicitar permisos oficiales mediant
 ### ⚙️ Configuración e Instalación
 
 * Clonación del Repositorio:
-    - git clone https://github.com/tu-usuario/expressapp.git
+    - git clone https://github.com/jmrodriguez2552/2DAM_Proyecto
 * Configuración del Backend:
     - Aloja los scripts PHP en tu servidor.
     - Actualiza la dirección IP en las variables URL de LoginActivity.kt y NominasFragment.kt.
